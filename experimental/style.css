@@ -1,0 +1,47 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.grid{
+    font-size: 10px;
+    display: grid;
+    padding: 0;
+    margin: auto;
+    width: 80%;
+    border: 1px solid black;
+    /* grid-template-columns: repeat(5, 1fr); */
+    gap: 2em;
+    grid-auto-flow: row;
+    grid-auto-rows: 1fr 1fr;
+
+}
+.grid > div{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 7rem;
+    align-items: center;
+}
+
+/* .first{
+    grid-column: span 2;
+    grid-row: 1;
+}
+.second{
+    grid-row: 1;
+    grid-column: 3;
+}
+.third{
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+.forth{
+    grid-row: 2;
+}
+.last {
+    grid-column: span 2;
+
+} */

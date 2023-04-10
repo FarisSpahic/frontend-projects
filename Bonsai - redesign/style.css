@@ -1,0 +1,205 @@
+:root {
+  --primary-green: #00b289;
+  --primary-gray: #4c4d5f;
+  --white: #fff;
+  --primary-yellow: #f8db62;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+
+.nav-desktop {
+  display: none;
+  gap: 4em;
+}
+.nav-desktop-list {
+  display: flex;
+  gap: 1rem;
+}
+.nav-desktop-list > .arrows::after {
+  content: " >";
+}
+
+.nav-mobile-menu-button {
+  border-radius: 12em;
+  padding: 0.8em;
+  text-align: center;
+  background-color: var(--primary-gray);
+  color: var(--white);
+  border: none;
+}
+.nav-desktop-buttons {
+  display: flex;
+  gap: 1rem;
+}
+.nav-desktop-buttons > button {
+  cursor: pointer;
+  padding: 0.4em 1em;
+  border-radius: 0.3rem;
+  font-family: Raleway;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#nav-desktop-buttons-login {
+  border: 1px solid var(--primary-green);
+  color: var(--primary-green);
+  background-color: var(--white);
+}
+#nav-desktop-buttons-startfree {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border: 1px solid var(--primary-gray);
+}
+#logo {
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: var(--primary-green);
+  font-weight: 500;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* PLANS SECTION  */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-size: 3.3em;
+  text-align: center;
+  color: var(--primary-gray);
+}
+
+#plan-switches {
+  border-radius: 2em;
+  padding: 0.3em 0.3em;
+  background-color: rgb(232, 214, 214);
+}
+#background-span {
+  padding: 0.3em 0.3em;
+  background-color: black;
+  border-radius: 2em;
+}
+#plan-switches > a {
+  display: inline-block;
+
+  padding: 0.7em;
+  border-radius: 2em;
+  font-weight: 500;
+}
+#yearly-switch-addon {
+  font-size: 0.8em;
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.2em 0.4em;
+  background-color: beige;
+}
+
+/* PLANS SECTION  */
+
+.plans-section {
+  max-width: 95%;
+  min-width: 40%;
+  padding: 4em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.plan  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 2em;
+  box-shadow: 0.12rem 0.12rem 0.5em rgb(194, 176, 176),
+    -0.12rem 0 0.5em rgb(255, 238, 238);
+}
+.plan hr {
+  width: 95%;
+  color: var(--primary-gray);
+}
+
+.plan li::marker {
+  content: "✔️   ";
+}
+
+.plan button {
+  cursor: pointer;
+  background-color: var(--primary-green);
+  border: none;
+  border-radius: 2em;
+  padding: 1em 3em;
+  font-size: 1rem;
+  color: var(--white);
+  font-family: Raleway;
+  font-weight: 600;
+}
+.plan h2 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+}
+.plan h3 {
+  font-size: 1.7rem;
+}
+.plan h3::before {
+  content: "$";
+  font-size: 1rem;
+}
+.plan i{
+  color: var(--primary-gray);
+  font-size: 0.7rem;
+}
+.plan p{
+  width: 40%;
+  text-align: center;
+  font-weight: 300;
+  font-size: .9rem;
+}
+.plan li{
+  margin: 1em 0;
+}
+
+.pro-plan{
+  border-top: 1.3em solid orange;
+  border-bottom: 1.3em solid orange;
+  border-inline: .4em solid orange;
+}
+#border-text{
+  position: relative;
+  top: -4.5em;
+  left: 0;
+  color: white;
+  font-weight: 700;  
+}
+@media screen and (min-width: 1200px) {
+  .nav-desktop {
+    display: flex;
+    align-items: center;
+  }
+  #menu-btn {
+    display: none;
+  }
+  .plans-section{
+    flex-direction: row;
+    gap: 2em;
+  }
+}
