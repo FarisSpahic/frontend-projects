@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+li{
+    list-style: none;
+}
+button{
+    font-family: 'inter';
+}
+#logo{
+    font-size: 1.5em;
+}
+header{
+    margin: 0 2rem;
+}
+#top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#links-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#links-header > li{
+    color: #717777;
+}
+#support-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#support-header > li{
+    color: #717777;
+}
+#support-header > i{
+    font-size: 1.5em;
+}
+
+#bottom-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#search-box{
+    display: flex;
+
+    width: 70%;
+}
+#search-box > * {
+    padding: 1em 0;
+}
+#srcb{
+    width: 90%;
+    background-color: #e4e9e9;
+    font-family: 'inter';
+    font-size: 1em;
+}
+#search-box > button{
+    background-color: #09757A;
+    color: white;
+    width: 15%;
+    font-size: 1em;
+}
+
+#prices{
+    display: flex;
+    justify-content: center;
+}
+#prices > span{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 1rem;
+    color: #717777;
+}
+#prices > span > i{
+    font-size: 1.3rem;
+    color: black;
+}
+/*  NAVIGATION END   */
+
+
+#banner{
+display: grid;
+grid-template-columns: 75% 25%;
+}
+#main-banner{
+    
+}
